@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	color: #000;
+	background: #fff;
+	font: 11px/13px Verdana, helvetica, sans-serif;
+}
+/* General reset */
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	border-style: none;
+	display: block;
+}
+input, select, textarea {
+	vertical-align: middle;
+	display: block;
+	outline: none;
+	font: 14px/16px Arial;
+	color: #888;
+}
+label, input[type="submit"]{
+	cursor: pointer;
+}
+a {
+	color: #f00;
+	text-decoration: none;
+}
+a:hover {text-decoration: underline;}
+/* General settings */
+#wrapper {
+	margin: 0 auto;
+	max-width: 640px;
+}
+/*-------------- Gallery ----------------*/
+.gallery {
+	max-width: 640px;
+	position: relative;
+}
+.gallery .list-holder {
+	width: 100%;
+	overflow: hidden;
+}
+.gallery .list {
+	width: 20000em;
+	overflow: hidden;
+}
+.gallery .list li {
+	float: left;
+	width: 640px;
+}
+.gallery .list li img {
+	width: 100%;
+	height: auto !important;
+}
+/*---------------- Switcher -----------------*/
+.switcher {
+	float: left;
+}
+.switcher li {
+	float: left;
+	margin: 0 15px 0 0;
+}
+.switcher li.active a {
+	color: red;
+	font-weight: bold;
+}
+.switcher li a, a.prev, a.next {
+	color: #000;
+	font-size: 20px;
+	line-height: 22px;
+}
+.switcher li a:hover, a.prev:hover, a.next:hover {
+	text-decoration: none;
+}
+/*-------------------- Left and right buttons ------------*/
+a.prev, a.next {
+	position: absolute;
+	color: #fff;
+	font-family: "Comic Sans MS";
+	font-size: 30px;
+	line-height: 32px;
+}
+a.prev:hover, a.next:hover {
+	font-weight: bold;
+}
+a.next {
+	top: 45%;
+	right: 25px;
+}
+a.prev {
+	top: 45%;
+	left: 25px;
+}
